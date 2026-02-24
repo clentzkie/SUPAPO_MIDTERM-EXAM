@@ -8,7 +8,8 @@ class FeatureController extends Controller
 {
     public function index()
     {
-        $features = DB::table('tbl_features')->get();
+        // Change 'features' to 'tbl_features'
+        $features = DB::table('tbl_features')->get(); 
         return view('features', compact('features'));
     }
 }

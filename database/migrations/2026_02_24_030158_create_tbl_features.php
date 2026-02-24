@@ -10,14 +10,16 @@ return new class extends Migration
      * Run the migrations.
      */
     // database/migrations/xxxx_xx_xx_create_tbl_features_table.php
-    public function up(): void
+   // database/migrations/xxxx_xx_xx_create_tbl_features_table.php
+public function up(): void
 {
-        Schema::create('tbl_features', function (Blueprint $table) {
-        $table->id(); // Primary Key
+    // Change 'features' to 'tbl_features'
+    Schema::create('tbl_features', function (Blueprint $table) { 
+        $table->id(); 
         $table->string('name');
         $table->text('description');
         $table->timestamps();
-     });
+    });
 }
 
     /**

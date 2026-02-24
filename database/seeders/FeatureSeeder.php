@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Feature; // Don't forget to import your Model!
+use App\Models\Feature;
 
 class FeatureSeeder extends Seeder
 {
